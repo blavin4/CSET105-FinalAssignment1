@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="full-wrap">
+        <h1>Grocery List Manager</h1>
+        <div class="container">
+            <div id="input">
+                <input type="text" id="item-input" name="item" placeholder="Enter item here">
+                <button id="enter" onclick="enterItem()">Enter</button>
+            </div>
+            <div id="btns">
+                <select name="mode" id="mode">
+                    <option value="add">Add</option>
+                    <option value="delete">Delete</option>
+                </select>
+                <select name="filter" id="filter" onchange="updateList()">
+                    <option value="all">Show All</option>
+                    <option value="purchased">Show Purchased</option>
+                    <option value="not-purchased">Show Not Purchased</option>
+                </select>
+            </div>
+        </div>
+        <div id="list">
+            
+        </div>
+        <button id="clear" onclick="clearList()">Clear List</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>

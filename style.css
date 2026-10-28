@@ -1,0 +1,58 @@
+body {
+    background-image: url("https://fruitgrowers.com/wp-content/uploads/2019/05/assorted-fruits-on-brown-wooden-racks-1-1000x750.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    max-height: 100vh;
+    margin: 0;
+    margin-top: 30px;
+}
+
+
+.full-wrap {
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: fit-content;
+    min-height: fit-content;
+    border-radius: 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    max-height: 100vh;
+    margin: 0;
+}
+
+button, input, select {
+    margin-bottom: 10px
+}
+
+#enter, #clear {
+    background-color: gray;
+}
+
+
+.strikethrough {
+    text-decoration: line-through;
+
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    width: fit-content;
+    button {
+        text-align: left;
+    }
+}
